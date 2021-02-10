@@ -3,7 +3,6 @@ package tests;
 import common.ArraySorter;
 import org.junit.Assert;
 import org.junit.Test;
-import util.Convertors;
 
 public class ArraySorterTest {
 

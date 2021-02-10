@@ -12,13 +12,10 @@ public class SortButtonListener implements ActionListener {
     private final JTable arrayTable;
     DefaultTableModel tableModel;
 
-
     public SortButtonListener(JTable arrayTable, DefaultTableModel tableModel) {
         this.arrayTable = arrayTable;
         this.tableModel = tableModel;
     }
-
-
 
     @Override
     public void actionPerformed(ActionEvent e) {

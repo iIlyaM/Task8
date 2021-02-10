@@ -1,8 +1,6 @@
 package gui.view;
 
 import javax.swing.*;
-import java.awt.*;
-
 
 public class Frame extends JFrame {
     private Panel panel;
@@ -10,7 +8,7 @@ public class Frame extends JFrame {
     public Frame() {
         panel = new Panel();
         this.setTitle("Task 8");
-        this.setSize(650,450);
+        this.setSize(650, 450);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

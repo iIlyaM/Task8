@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class FileReader {
 
     public static List<String> readFile(String fileName) throws Exception {

@@ -8,7 +8,6 @@ import java.awt.Dimension;
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 import java.awt.*;
 
 public class Panel extends JPanel {
@@ -37,28 +36,28 @@ public class Panel extends JPanel {
         arrayTable.setFont(new Font("Common", Font.PLAIN, 20));
         arrayTable.setForeground(new Color(255, 255, 255));
         arrayTable.setOpaque(false);
-        ((DefaultTableCellRenderer)arrayTable.getDefaultRenderer(Object.class)).setOpaque(false);
-        DefaultTableCellRenderer renderer = (DefaultTableCellRenderer)arrayTable.getDefaultRenderer(Object.class);
-        renderer.setHorizontalAlignment( SwingConstants.CENTER );
+        ((DefaultTableCellRenderer) arrayTable.getDefaultRenderer(Object.class)).setOpaque(false);
+        DefaultTableCellRenderer renderer = (DefaultTableCellRenderer) arrayTable.getDefaultRenderer(Object.class);
+        renderer.setHorizontalAlignment(SwingConstants.CENTER);
     }
 
     private void addLoadArrayButton() {
         add(loadArrayButton);
-        loadArrayButton.setBounds(250,450,100,30);
+        loadArrayButton.setBounds(250, 450, 100, 30);
         loadArrayButton.setBackground(new Color(27, 238, 5));
-        loadArrayButton.addActionListener(new LoadButtonListener(arrayTable,tableModel));
+        loadArrayButton.addActionListener(new LoadButtonListener(arrayTable, tableModel));
     }
 
     private void addSortArrayButton() {
         add(sortArrayButton);
-        sortArrayButton.setBounds(250,350,100,30);
-        sortArrayButton.addActionListener(new SortButtonListener(arrayTable,tableModel));
+        sortArrayButton.setBounds(250, 350, 100, 30);
+        sortArrayButton.addActionListener(new SortButtonListener(arrayTable, tableModel));
         sortArrayButton.setBackground(new Color(10, 255, 218));
     }
 
     private void addSaveArrayButton() {
         add(saveArrayButton);
-        saveArrayButton.setBounds(370,350,100,30);
+        saveArrayButton.setBounds(370, 350, 100, 30);
         saveArrayButton.setBackground(new Color(128, 94, 255));
         saveArrayButton.addActionListener(new SaveButtonListener(arrayTable));
     }

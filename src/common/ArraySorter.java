@@ -16,7 +16,7 @@ public class ArraySorter {
     }
 
     private static void swapColumns(int[][] arr, int c1, int c2) {
-        for(int[] row : arr) {
+        for (int[] row : arr) {
             int temp = row[c1];
             row[c1] = row[c2];
             row[c2] = temp;
@@ -25,9 +25,9 @@ public class ArraySorter {
 
     private static int compareColumns(int[][] arr, int col1, int col2) {
         int diff = 0;
-        for(int row = 0; row < arr.length; row++) {
+        for (int row = 0; row < arr.length; row++) {
             diff = arr[row][col1] - arr[row][col2];
-            if(diff != 0) {
+            if (diff != 0) {
                 break;
             }
         }
